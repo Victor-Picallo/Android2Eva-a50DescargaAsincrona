@@ -3,27 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    >
-
+    android:padding="16dp">
 
     <EditText
         android:id="@+id/etUrl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Introduce " />
+        android:hint="Introduce la URL de la imagen"
+        android:inputType="textUri"
+        android:ems="10" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Button" />
+        android:layout_marginTop="8dp"
+        android:text="Descargar y Mostrar" />
 
     <ImageView
-        android:layout_width="380dp"
-        android:layout_height="595dp" />
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Imagen descargada"
+        android:scaleType="fitCenter"
+        android:background="#F0F0F0" />
+
 </LinearLayout>
